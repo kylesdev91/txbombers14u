@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/7ba52d79-114c-4dda-bbbb-378d28142d12/microsoft.web/sites/subscriptions/7ba52d79-114c-4dda-bbbb-378d28142d12/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/txbombers14u",
+  "appService.deploySubpath": "."
+}
