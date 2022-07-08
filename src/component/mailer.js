@@ -16,6 +16,7 @@ const Mailer = () => {
       })
       .catch((err) => console.log(err));
   }
+
   return (
     <div
       className='container border'
@@ -43,37 +44,32 @@ const Mailer = () => {
             type='text'
             name='parentName'
             className='form-control'
-            style={{ 'min-width': '300px' }}
+            style={{ minWidth: '300px' }}
           />
-
           <label
             style={{ marginTop: '15px', color: 'white', fontWeight: 'bold' }}
           >
             Parent Phone
           </label>
           <input type='number' name='parentPhone' className='form-control' />
-
           <label
             style={{ marginTop: '15px', color: 'white', fontWeight: 'bold' }}
           >
             Parent Email
           </label>
           <input type='email' name='parentEmail' className='form-control' />
-
           <label
             style={{ marginTop: '15px', color: 'white', fontWeight: 'bold' }}
           >
             Parent Address
           </label>
           <input type='text' name='parentAddress' className='form-control' />
-
           <label
             style={{ marginTop: '15px', color: 'white', fontWeight: 'bold' }}
           >
             Player Name
           </label>
           <input type='text' name='playerName' className='form-control' />
-
           <label
             style={{ marginTop: '15px', color: 'white', fontWeight: 'bold' }}
           >
@@ -84,14 +80,12 @@ const Mailer = () => {
             name='playerCurrentTeam'
             className='form-control'
           />
-
           <label
             style={{ marginTop: '15px', color: 'white', fontWeight: 'bold' }}
           >
             Player Date Of Birth
           </label>
           <input type='text' name='playerDOB' className='form-control' />
-
           <label
             style={{ marginTop: '15px', color: 'white', fontWeight: 'bold' }}
           >
@@ -102,7 +96,6 @@ const Mailer = () => {
             name='playerPrimaryPosition'
             className='form-control'
           />
-
           <label
             style={{ marginTop: '15px', color: 'white', fontWeight: 'bold' }}
           >
@@ -113,18 +106,22 @@ const Mailer = () => {
             name='playerSecondaryPosition'
             className='form-control'
           />
-
           <label
             style={{ marginTop: '15px', color: 'white', fontWeight: 'bold' }}
           >
             Notable Accomplishments / Recognitions
           </label>
-          <textarea name='message' rows='2' className='form-control' />
+          <textarea name='message' rows='1' className='form-control' />
           <input
+            id='submit'
             type='submit'
             value='Submit'
             className='form-control btn btn-primary'
-            style={{ marginTop: '75px' }}
+            style={{
+              marginTop: '55px',
+              width: '200px',
+              margin: 'auto',
+            }}
           />
         </form>
       </div>
